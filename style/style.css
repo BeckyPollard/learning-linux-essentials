@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-image: url(/learning/linux/images/textures/bg2.gif);
+  background-image: url(/images/textures/bg2.gif);
   font-family: sans-serif;
 }
 
@@ -15,7 +15,7 @@ main {
 }
 header, section, nav ul li a {
   background: #bac400;
-  background-image: url(/learning/linux/images/textures/bg2.jpg);
+  background-image: url(/images/textures/bg2.jpg);
   background-blend-mode: lighten;
   border-radius: 5px;
   padding: 10px;
