@@ -1,13 +1,11 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-body{line-height:1}
-ol,ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
-table{border-collapse:collapse;border-spacing:0}
+@import '../../styles/reset.css';
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background-image: url(../assets/images/bg2.gif);
+  background-image: url(../../images/textures/bg2.gif);
   font-family: sans-serif;
 }
 
@@ -15,20 +13,42 @@ main {
   margin: 20px auto;
   max-width: 900px;
 }
-header, section {
+header, section, nav ul li a {
   background: #bac400;
-  background-image: url(../assets/images/bg2.jpg);
+  background-image: url(../../images/textures/bg2.jpg);
   background-blend-mode: lighten;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
-  box-shadow: #000000cc 0px 10px 20px;
+  box-shadow: #00000099 0px 10px 20px;
 }
 header {
   display: flex;
   justify-content: space-between;
-
 }
+nav ul {
+  display: flex;
+}
+nav ul li a{
+  margin-right: 10px;
+  padding: 5px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  filter: hue-rotate(3rad);
+  color: #000;
+  font-family: monospace;
+  box-shadow: none;
+  box-shadow: #00000066 0px 5px 10px;
+}
+nav ul li a:hover{
+  filter: hue-rotate(2.5rad);
+}
+nav ul li:last-of-type {
+  margin-right: 0px;
+}
+
 p {
   margin-bottom: 10px;
 }
